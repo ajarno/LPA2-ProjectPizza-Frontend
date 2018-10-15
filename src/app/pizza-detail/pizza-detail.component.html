@@ -5,10 +5,10 @@
     <img src={{pizza.url}} class="img-fluid" alt="responsive image de {{pizza.name}}">
 
     <h3>{{pizza.name | titlecase}}</h3>
-    <h2>{{pizza.price}} €</h2>
+    <h3>{{pizza.price}} €</h3>
     
-    <div class="row">
-      <a class="btn btn-primary" style="margin-right: 5%;">Commander</a>
+    <div class="d-flex justify-content-start">
+      <a class="btn btn-primary">Commander</a>
       <a routerLink="/pizza-list" class="btn btn-primary">Retour</a>
     </div>
   </div>
