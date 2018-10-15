@@ -4,7 +4,8 @@
     <p>{{pizza.price}} €</p>
   </div>
   <div class="col">
-    <img [src]="pizza.url" alt="image de {{pizza.name}}">
+    <a routerLink="/pizza-list/{{pizza.id}}"><img [src]="pizza.url" alt="image de {{pizza.name}}"></a>
+    <a routerLink="/pizza-list/{{pizza.id}}" style="margin-top: 5%;" class="btn btn-primary">Voir</a>
   </div>
 
 </div>
