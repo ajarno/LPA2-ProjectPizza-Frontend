@@ -10,11 +10,13 @@ import { Location } from '@angular/common';
   styleUrls: ['./pizza-detail.component.css']
 })
 export class PizzaDetailComponent implements OnInit { 
+
   public id = + this.activateRoute.snapshot.paramMap.get('id');
   pizza: Pizza;
+
   constructor(
     private activateRoute: ActivatedRoute,
-    private location: Location,
+    // private location: Location,
     private pizzaService: PizzaService){}
 
 
