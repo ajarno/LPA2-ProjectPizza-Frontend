@@ -8,6 +8,7 @@ import { PizzaComponent } from './pizza/pizza.component';
 import { PizzaListComponent } from './pizza-list/pizza-list.component';
 import { PizzaDetailComponent } from './pizza-detail/pizza-detail.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { ApiModule } from './REST';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
   ],
 
   imports: [
+    ApiModule,
     NgxPayPalModule,
     BrowserModule,
     HttpClientModule,

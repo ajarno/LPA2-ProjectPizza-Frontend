@@ -3,6 +3,7 @@ import { Pizza } from '../pizza';
 import { ActivatedRoute } from '@angular/router';
 import { PizzaService } from '../pizza.service';
 import { PayPalConfig, PayPalEnvironment, PayPalIntegrationType } from 'ngx-paypal';
+import { OrderService } from '../REST';
 
 
 @Component({
@@ -17,7 +18,9 @@ export class PizzaDetailComponent implements OnInit {
   public payPalConfig?: PayPalConfig;
 
 
-  constructor(private activateRoute: ActivatedRoute, private pizzaService: PizzaService){}
+  constructor(private activateRoute: ActivatedRoute, 
+              private pizzaService: PizzaService,
+              private orderService: OrderService){}
 
   ngOnInit() {
     const id = +this.activateRoute.snapshot.paramMap.get('id');
