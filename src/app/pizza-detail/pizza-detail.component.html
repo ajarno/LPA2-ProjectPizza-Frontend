@@ -8,8 +8,9 @@
     <h3>{{pizza.price}} €</h3>
     
     <div class="d-flex flex-wrap justify-content-start">
-      <a class="btn btn-primary">Commander</a>
+      <!-- <a class="btn btn-primary">Commander</a> -->
+      <ngx-paypal [config]="payPalConfig"></ngx-paypal>
       <a routerLink="/pizza-list" class="btn btn-primary">Retour</a>
     </div>
   </div>
-</div> 
+</div>

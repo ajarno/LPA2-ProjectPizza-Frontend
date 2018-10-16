@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule }    from '@angular/common/http';
+import { NgxPayPalModule } from 'ngx-paypal';
 
 import { AppComponent } from './app.component';
 import { PizzaComponent } from './pizza/pizza.component';
@@ -15,12 +16,16 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     PizzaListComponent,
     PizzaDetailComponent
   ],
+
   imports: [
+    NgxPayPalModule,
     BrowserModule,
     HttpClientModule,
     AppRoutingModule 
   ],
+
   providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
