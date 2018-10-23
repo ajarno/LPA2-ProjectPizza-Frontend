@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod && netlify-lambda build source-folder",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "functions": "netlify-lambda serve source-folder"
   },
   "private": true,
   "dependencies": {
@@ -46,6 +47,7 @@
     "protractor": "^5.4.1",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
+    "netlify-lambda": "~1.0.2",
     "typescript": "~2.7.2"
   }
 }
