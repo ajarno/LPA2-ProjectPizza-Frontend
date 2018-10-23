@@ -6,7 +6,7 @@ exports.handler = (event, context, callback) => {
     //Return 200 to caller
     callback(null, {
         statusCode: '200',
-        body: 'validation'
+        body: 'hello'
     });
 
     //Read the IPN message sent from PayPal and prepend 'cmd=_notify-validate'
